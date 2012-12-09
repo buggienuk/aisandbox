@@ -1,1 +1,10 @@
-does this work?
+Beginplannen:
+- Als je iemand ziet, doe walk of defend.
+
+Medium:
+- ??
+
+Gevorderd:
+- kaart gebruiken met lastknownpositions van vijanden en hierop je view-richting op aanpassen.
+
+
