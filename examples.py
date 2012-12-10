@@ -14,8 +14,20 @@ class MichaComander(Commander):
     def tick(self):
         # doe iets leuks met alle levende bots
         for bot in self.game.bots_alive:
-            # check if enemy in de buurt/line of sight/whatever is
-            # als je niet loopt/defend, ga dan lopen/defenden. Daarna doe je weer wat leuks
+            #for each own bot, check alle info about enemy bots
+            #maak een array waar je info over enemy bots in opslaat, met weights van hoe gevaarlijk ze zijn en hoe graag je aan wilt vallen
+            for enemy in self.game.Botinf:
+                if enemy.visibleEnemies != NONE:
+                    if bot.state != STATE_DEFENDING or bot.state != STATE_MOVING:
+                        #self.issue(commands.defend, bot, #goal, description, lookat)
+                    ## met enemy.seenlast, enemy.facingDirection en enemy.position kan je ophalen waneer je deze bot voor het laatst hebt gezien
+                    ## hier kan je dan een verwacht looppatroon uit optrekken
+                    if
+                    #can't see enemies
+                else:
+                #at least 1 enemie in vision
+
+
 
 
 
