@@ -10,6 +10,14 @@ def contains(area, position):
     start, finish = area
     return position.x >= start.x and position.y >= start.y and position.x <= finish.x and position.y <= finish.y
 
+class MichaComander(Commander):
+    def tick(self):
+        # doe iets leuks met alle levende bots
+        for bot in self.game.bots_alive:
+            # check if enemy in de buurt/line of sight/whatever is
+            # als je niet loopt/defend, ga dan lopen/defenden. Daarna doe je weer wat leuks
+
+
 
 class RandomCommander(Commander):
     """
